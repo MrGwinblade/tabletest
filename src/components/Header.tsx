@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({ className, currentYear, visibleMonths,
         <div className="flex items-center gap-4">
           <select
             value={currentYear}
-             className={`${styles['year-dropdown']} text-white text-xl font-semibold`}
+             className={`${styles['year-dropdown']} text-xl font-semibold`}
           >
             {years.map((year) => (
               <option key={year} value={year}>
