@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-container {
+  @apply grid grid-cols-8 border-b border-gray-200;
+}
+
+.grid-container-custom {
+  @apply grid grid-cols-[auto,auto,1fr,1fr,1fr,1fr,1fr,1fr] border-b border-gray-200;
+}
+
+.cell {
+  @apply p-4 text-center border-r border-gray-200 last:border-r-0;
+}
+
+.cell-header {
+  @apply p-4 font-medium text-gray-900 border-r border-gray-200 text-center;
+}
+
+.cell-header-second {
+  @apply py-4 font-medium text-center text-gray-900 border-r border-gray-200;
+}
+
+.header-divider {
+  @apply border-b border-gray-200 pb-3;
+}
+
+.header-bottom {
+  @apply pt-3;
+}
+
+.data-row-income {
+  @apply pb-4 text-sm font-medium text-gray-500 flex gap-3 space-x-1 justify-evenly;
+}
+
+.data-row-partners {
+  @apply pt-4 text-xs text-gray-600 flex gap-3 space-x-1 justify-evenly;
+}
+
+.no-data {
+  @apply text-sm text-gray-400;
+}
+
+.table-container {
+  @apply w-full max-w-7xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.header-container {
+  @apply bg-white rounded-t-lg shadow-sm border border-gray-200;
+}
+
+.header-month {
+  @apply bg-gray-50;
+}
+
+.total-row {
+  @apply bg-gray-50 hover:bg-blue-100 transition-colors duration-200;
+}
+
+.manager-row-even {
+  @apply bg-white hover:bg-gray-50 transition-colors duration-200;
+}
+
+.manager-row-odd {
+  @apply bg-gray-50 hover:bg-gray-100 transition-colors duration-200;
+}
+
+.button-nav {
+  @apply p-2 hover:bg-gray-100 rounded-md transition-colors duration-200;
+}
+
+.button-add {
+  @apply flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200;
+}
+
+.year-dropdown {
+  @apply  text-blue-800 px-4 py-2 rounded-md border border-gray-300  ;
+  /* Neon glow effect approximation */
+
+}
